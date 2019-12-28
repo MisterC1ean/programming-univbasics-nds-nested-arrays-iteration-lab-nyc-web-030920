@@ -23,7 +23,8 @@ while row_index < src.count do
     greater_numbers_array << src[row_index][0]
   else
     greater_numbers_array<< src[row_index][1]
-    row_index += 1
+  end
+  row_index += 1
 end
   return greater_numbers_array
 end
