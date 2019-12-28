@@ -16,24 +16,7 @@ return i_love_pizza
 end
 
 def find_greater_pair(src)
-  highest_value_of_pair = []
-row_index = 0
-while row_index < src.count do   #src.count is number                                  of elements in the                                   src array
-  element_index = 0
-  while element_index < src[row_index].count do
-    # How to read the following line of code:
-    #   Array at row_index
-    #   Element of the inner array at element_index
-    #   The first character of that element...
-    if src[row_index][element_index] > src[row_index][element_index + 1]
-      
-      highest_value_of_pair <<  src[row_index][element_index]
-    else
-      highest_value_of_pair << src[row_index][element_index + 1]
-    end
-    element_index += 1
-  end
-  row_index += 1
+
 end
  
 outer_results
