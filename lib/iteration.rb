@@ -16,7 +16,13 @@ return i_love_pizza
 end
 
 def find_greater_pair(src)
-
+  greater_numbers_array = []
+  row_index = 0
+while row_index < src.count do
+  if src[row_index][0] > src[row_index][1]
+    greater_numbers_array << src[row_index][0]
+  else
+    greater_numbers_array<< src[row_index][1]
 end
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # Produce a new Array that contains the larger number of each of the pairs
