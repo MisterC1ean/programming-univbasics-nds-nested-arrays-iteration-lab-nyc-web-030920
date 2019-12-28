@@ -18,15 +18,15 @@ end
 def find_greater_pair(src)
   greater_numbers_array = []
   row_index = 0
-while row_index < src.count do
-  if src[row_index][0] > src[row_index][1]
+  while row_index < src.count do
+    if src[row_index][0] > src[row_index][1]
     greater_numbers_array << src[row_index][0]
-  else
+      else
     greater_numbers_array<< src[row_index][1]
-  end
+    end
   row_index += 1
-end
-  return greater_numbers_array
+  end
+return greater_numbers_array
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
