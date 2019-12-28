@@ -38,9 +38,8 @@ def total_even_pairs(src)
   while row_index < src.count do
     if src[row_index][0] %2 &&             src[row_index][1] %2 == 0
       total_of_even_pairs = total_of_even_pairs + src[row_index][0] + src[row_index][1]
-    else
-      row_index +=1
     end
+    row_index += 1
   end
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # if both numbers in the pair are even, then add both those numbers to the
